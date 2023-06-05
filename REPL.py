@@ -31,4 +31,4 @@ def generate_text(model, start_string, num_generate = 150, temperature=1.0):
 
     return (start_string + ''.join(text_generated))
 
-print(generate_text(model, start_string=u"Dulcinea dice"))
+print(generate_text(model, start_string=u"Sancho dice"))
