@@ -7,7 +7,7 @@ import numpy as np
 BATCH_SIZE = 64
 BUFFER_SIZE = 10000
 
-dataset, vocab = get_data("data/DonQ1.txt")
+dataset, vocab = get_data("data/DonQ2.txt")
 char2index = {char: index for index, char in enumerate(vocab)}
 index2char = np.array(vocab)
 
@@ -121,7 +121,7 @@ checkpoint_callback=tf.keras.callbacks.ModelCheckpoint(
 
 """### Execute the training"""
 
-EPOCHS=2
+EPOCHS=5
 
 history = model.fit(
   x=dataset,
@@ -230,5 +230,5 @@ print(generate_text(model, start_string=u"Don", temperature=1.5))
 
 """## Save the model"""
 
-model_name = 'quijote_rnn.h5'
+model_name = 'quijote_rnn2.h5'
 model.save(model_name, save_format='h5')
