@@ -32,7 +32,7 @@ Here is a **general overview** of the model and its shape:
 
 ![example model](images/model.png)
 
-With 5,343,051 trainable parameters and running on 5 epochs, I trained a preliminary LSTM model based on *don Quijote*. The sparse categorical cross entropy less was reduced from 2.6026 in the first epoch to 1.4291 in the last epoch. 
+With 5,343,051 trainable parameters and running on 5 epochs, I trained a preliminary LSTM model based on *don Quijote* using an Adam optimizer. THe sparse categorical cross entropy loss was reduced from 2.6026 in the first epoch to 1.4291 in the last epoch. 
 
 The first attempt of implementing a LSTM had a fatal flaw in the preprocessing step. Regexes were used to strip punctuation and white space, however that removes grammatical structure from the sentences entirly. A sample sentence from this first model is riddled with words that do not exist and grammatical errors:
 
