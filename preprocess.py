@@ -21,7 +21,7 @@ def get_data(file_name):
     buffer_size = 10000
 
     text = open(file_name, mode='r', encoding='utf-8-sig').read()
-    text = re.sub("[^\w\s]+", "", text)
+    # text = re.sub("[^\w\s]+", "", text)
 
     vocab = sorted(set(text))
     vocab_size = len(vocab)

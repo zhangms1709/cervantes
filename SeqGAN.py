@@ -8,7 +8,7 @@ index2char = np.array(vocab)
 
 model = tf.keras.models.load_model('quijote_rnn.h5')
 
-def generate_text(model, start_string, num_generate = 1000, temperature=1.0):
+def generate_text(model, start_string, num_generate = 200, temperature=1.0):
     # Evaluation step (generating text using the learned model)
 
     # Converting our start string to numbers (vectorizing).
@@ -41,4 +41,4 @@ def generate_text(model, start_string, num_generate = 1000, temperature=1.0):
     return (start_string + ''.join(text_generated))
 
 # Generate the text with default temperature (1.0).
-print(generate_text(model, start_string=u"Dulcinea "))
+print(generate_text(model, start_string=u"Dulcinea flor "))
