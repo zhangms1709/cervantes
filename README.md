@@ -17,7 +17,7 @@ The first version of the RNN was designed to be a simple baseline model. It cons
 
 One of the main advantages of using a LSTM over a vanilla RNN include having memory of words which is not restricted to the short term. In addition to the hidden state, there is a cell state which preserves information longer through the forget and remember modules. Pointwise multiplication by a mask vector is used to forget information while remembering is done through tanh and gating memory to contain only what we want to preserve long-term:
 
-<img src="LSTM.png" width="420px" height="170px">
+<img src="images/LSTM.png" width="420px" height="170px">
 
 Given the huge size of the don Quijote corpus, there were two primary NLP challenges in creating an effective language model. Notably, Cervantes' masterpiece *El ingenioso hidalgo don quijote de la mancha* is in an antiquated form of Spanish (Lathrop 2019). The novel has several phonological and grammatical peculiarities:
 - Using past subjunctive where one would expect the conditional
@@ -30,7 +30,7 @@ Following spanish literary corpi such as MegaLite, a UTF-8 encoding was used to 
 
 Here is a **general overview** of the model and its shape:
 
-![example model](model.png)
+![example model](images/model.png)
 
 With 5,343,051 trainable parameters and running on 5 epochs, I trained a preliminary LSTM model based on *don Quijote*. The sparse categorical cross entropy less was reduced from 2.6026 in the first epoch to 1.4291 in the last epoch. 
 
