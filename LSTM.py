@@ -5,6 +5,7 @@ import numpy as np
 
 BATCH_SIZE = 64
 BUFFER_SIZE = 10000
+EPOCHS=5
 
 dataset, vocab = get_data("data/DonQ2.txt")
 
@@ -66,8 +67,6 @@ checkpoint_callback=tf.keras.callbacks.ModelCheckpoint(
     filepath=checkpoint_prefix,
     save_weights_only=True
 )
-
-EPOCHS=5
 
 history = model.fit(
   x=dataset,
