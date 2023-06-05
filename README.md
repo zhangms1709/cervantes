@@ -13,6 +13,8 @@ Many Text generation in Spanish (based on Don Quijote) using character-based RNN
 
 ## Vanilla RNN
 
+![example model](model.png)
+
 ## SeqGAN
 
 ## Comparison
