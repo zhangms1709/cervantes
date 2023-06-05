@@ -19,7 +19,7 @@ One of the main advantages of using a LSTM over a vanilla RNN include having mem
 
 <img src="LSTM.png" width="370px" height="150px">
 
-Given the huge size of the don Quijote corpus, there were two primary NLP challenges in creating an effective language model. Notably, Cervantes' masterpiece *El ingenioso hidalgo don quijote de la mancha* is in an antiquated form of Spanish (Lathrop 2019). The language has several phonological and grammatical peculiarities:
+Given the huge size of the don Quijote corpus, there were two primary NLP challenges in creating an effective language model. Notably, Cervantes' masterpiece *El ingenioso hidalgo don quijote de la mancha* is in an antiquated form of Spanish (Lathrop 2019). The novel has several phonological and grammatical peculiarities:
 - Using past subjunctive where one would expect the conditional
 - Using future subjunctive which is now replaced by present indicative
 - Employing passive voice and contractions prevalently
@@ -43,7 +43,7 @@ The first attempt of implementing a LSTM had a fatal flaw in the preprocessing s
 
 </details>
 
-Thus, regexes were removed and puncutation was preserved. Drastic improvement was observed. The model was capable of citing numerous characters (i.e. Camilla and don Fernando) and using different literary styles such as sonnets. However, there was still significant ambiguity in the sentences and meaning was often obfuscated. For example, here are two sample sentences generated from the input "Dulcinea":
+Therefore, regexes were removed and puncutation was preserved. Drastic improvement was observed. The model was capable of citing numerous characters (i.e. Camilla and don Fernando) and using different literary styles such as sonnets. However, there was still significant ambiguity in the sentences and meaning was often obfuscated. For example, here are two sample sentences generated from the input "Dulcinea":
 
 <details>
   <summary>Example output:</summary>
