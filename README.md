@@ -15,9 +15,9 @@ Many Text generation in Spanish (based on Don Quijote) using character-based RNN
 
 The first version of the RNN was designed to be a simple baseline model. It consists of one embedding layer, a long short-term memory (LSTM) layer, and a dense layer. RNNs are very strong at modelling sequential data, and thus has been frequently used to generate text imitating authors such as Shakespeare. However, very few RNN models have been tested on other languages with more complicated grammatical rules such as Spanish.
 
-One of the main advantages of using a LSTM over a vanilla RNN include having memory of words which is not restricted to the short term, since the hidden states preserve information longer through the forget and remember modules:
+One of the main advantages of using a LSTM over a vanilla RNN include having memory of words which is not restricted to the short term. In addition to the hidden state, there is a cell state which preserves information longer through the forget and remember modules. Pointwise multiplication by a mask vector is used to forget information while remembering is done through tanh and gating memory to contain only what we want to preserve long-term:
 
-![example LSTM](LSTM.png)
+![example LSTM](LSTM.png | width=100)
 
 Given the huge size of the don Quijote corpus, there were two primary NLP challenges in creating an effective language model. Notably, Cervantes' masterpiece *El ingenioso hidalgo don quijote de la mancha* is in an antiquated form of Spanish. The language employed in the text is almost modern spanish, but does have phonological and grammatical peculiarities such as using past subjunctive where one would expect the conditional and using future subjunctive which had its function replaced by present indicative (Lathrop 2019). Spanish has stricter and more nuanced grammatical rules compared to English, and thus, the training process to reach high accuracy may be longer.
 
@@ -38,7 +38,7 @@ The first attempt of implementing a LSTM had a fatal flaw in the preprocessing s
 
 </details>
 
-Thus, regexes were removed and puncutation was preserved. Instant improvement was observed. THe model was capable of citing numerous characters and producing different literary forms such as sonnets. However, there was still significant ambiguity in the sentences and meaning was often obfuscated. Here is are two sample sentences generated from the input "Dulcinea":
+Thus, regexes were removed and puncutation was preserved. Instant improvement was observed. The model was capable of citing numerous characters and producing different literary forms such as sonnets. However, there was still significant ambiguity in the sentences and meaning was often obfuscated. Here is are two sample sentences generated from the input "Dulcinea":
 
 <details>
   <summary>Example output:</summary>
@@ -46,7 +46,7 @@ Thus, regexes were removed and puncutation was preserved. Instant improvement wa
   >```Dulcinea que de su risponde, porque el camino como un canse nibes del triendo en cielto, simprino moy de las humándoles, verían y heráspanto.```
   
   > ```Dulcinea dice: Dios hecha hejor donde galer la emparte y mifar se decernas, aunque natura de otras nicús mantas destas de aligaron.```
-  
+
 </details>
 
 These sentences are a significant improvement in several respects. The model is able to employ transition words with correct punctuation such as porque (because) and aunque (although). Also, the second sentence seems to be on the verge of meaning, as it is a prayer to God (Dios) which is common in the novel.
