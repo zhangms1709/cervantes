@@ -1,0 +1,4 @@
+data/
+tmp/
+__pycache__/
+quijote_rnn.h5
