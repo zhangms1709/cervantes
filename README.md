@@ -34,8 +34,9 @@ The first attempt of implementing a LSTM had a fatal flaw in the preprocessing s
 <details>
   <summary>Example output:</summary>
   
+  >```
   don Quijote Cara dijo era la capa Parciliente si posaría de dresa ser por pencallero para de Harái yuque exegormambién en la cual me dejando exa yacio dijo dichos Espora que esaba harto que él cura son descuy saliado azóna aquellos que darllera Lazandí con la crietpa.
-
+  ```
 </details>
 
 Thus, regexes were removed and puncutation was preserved. Instant improvement was observed. THe model was capable of citing numerous characters and producing different literary forms such as sonnets. However, there was still significant ambiguity in the sentences and meaning was often obfuscated. Here is are two sample sentences generated from the input "Dulcinea":
@@ -43,10 +44,11 @@ Thus, regexes were removed and puncutation was preserved. Instant improvement wa
 <details>
   <summary>Example output:</summary>
   
+  >```
   Dulcinea que de su risponde, porque el camino como un canse nibes del triendo en cielto, simprino moy de las humándoles, verían y heráspanto.
   
   Dulcinea dice: Dios hecha hejor donde galer la emparte y mifar se decernas, aunque natura de otras nicús mantas destas de aligaron.
-
+  ```
 </details>
 
 These sentences are a significant improvement in several respects. The model is able to employ transition words with correct punctuation such as porque (because) and aunque (although). Also, the second sentence seems to be on the verge of meaning, as it is a prayer to God (Dios) which is common in the novel.
