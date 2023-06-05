@@ -19,7 +19,7 @@ One of the main advantages of using a LSTM over a vanilla RNN include having mem
 
 <img src="images/LSTM.png" width="420px" height="160px">
 
-Given the huge size of the don Quijote corpus, there were two primary NLP challenges in creating an effective language model. Notably, Cervantes' masterpiece *El ingenioso hidalgo don quijote de la mancha* is in an antiquated form of Spanish (Lathrop 2019). The novel has several phonological and grammatical peculiarities:
+Given the huge size of the don Quijote corpus, there were two primary NLP challenges in creating an effective language model. Notably, Cervantes' masterpiece *El ingenioso hidalgo don Quijote de la Mancha* is in an antiquated form of Spanish (Lathrop 2019). The novel has several phonological and grammatical peculiarities:
 - Using past subjunctive where one would expect the conditional
 - Using future subjunctive which is now replaced by present indicative
 - Employing passive voice and contractions prevalently
