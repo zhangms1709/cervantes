@@ -15,9 +15,9 @@ Many Text generation in Spanish (based on Don Quijote) using character-based RNN
 
 The first version of the RNN was designed to be a simple baseline model. It consists of one embedding layer, a long short-term memory (LSTM) layer, and a dense layer. RNNs are very strong at modelling sequential data, and thus has been frequently used to generate text imitating authors such as Shakespeare. However, very few RNN models have been tested on other languages with more complicated grammatical rules such as Spanish.
 
-![example LSTM](LSTM.png)
+One of the main advantages of using a LSTM over a vanilla RNN include having memory of words which is not restricted to the short term, since the hidden states preserve information longer through the forget and remember modules:
 
-One of the main advantages of using a LSTM over a vanilla RNN include having memory of words which is not restricted to the short term, since the hidden states preserve information longer through the forget and remember modules.
+![example LSTM](LSTM.png)
 
 Given the huge size of the don Quijote corpus, there were two primary NLP challenges in creating an effective language model. Notably, Cervantes' masterpiece *El ingenioso hidalgo don quijote de la mancha* is in an antiquated form of Spanish. The language employed in the text is almost modern spanish, but does have phonological and grammatical peculiarities such as using past subjunctive where one would expect the conditional and using future subjunctive which had its function replaced by present indicative (Lathrop 2019). Spanish has stricter and more nuanced grammatical rules compared to English, and thus, the training process to reach high accuracy may be longer.
 
