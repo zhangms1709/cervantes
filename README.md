@@ -19,7 +19,11 @@ One of the main advantages of using a LSTM over a vanilla RNN include having mem
 
 <img src="LSTM.png" width="350px" height="150px">
 
-Given the huge size of the don Quijote corpus, there were two primary NLP challenges in creating an effective language model. Notably, Cervantes' masterpiece *El ingenioso hidalgo don quijote de la mancha* is in an antiquated form of Spanish. The language employed in the text is almost modern spanish, but does have phonological and grammatical peculiarities such as using past subjunctive where one would expect the conditional and using future subjunctive which had its function replaced by present indicative (Lathrop 2019). Spanish has stricter and more nuanced grammatical rules compared to English, and thus, the training process to reach high accuracy may be longer.
+Given the huge size of the don Quijote corpus, there were two primary NLP challenges in creating an effective language model. Notably, Cervantes' masterpiece *El ingenioso hidalgo don quijote de la mancha* is in an antiquated form of Spanish (Lathrop 2019). The language has several phonological and grammatical peculiarities:
+- Using past subjunctive where one would expect the conditional
+- Using future subjunctive which had its function replaced by present indicative 
+- Passive voice is much more prevalent in passages of dialogue
+Spanish has stricter and more nuanced grammatical rules compared to English, and thus, the training process to reach high accuracy may be longer.
 
 Following spanish literary corpi such as MegaLite, a UTF-8 encoding was used to represent the original spanish. This setting ensures that accents and punctuation unique to Spanish are preserved in text generation. The text file was also read using UTF-8 signature, which treats the byte order marks as metadata instead of part of the file's content in order to avoid preprocessing bugs with dictionary key access. 
 
