@@ -23,6 +23,8 @@ Given the huge size of the don Quijote corpus, there were two primary NLP challe
 
 Following spanish literary corpi such as MegaLite, a UTF-8 encoding was used to represent the original spanish. This setting ensures that accents and punctuation unique to Spanish are preserved in text generation. The text file was also read using UTF-8 signature, which treats the byte order marks as metadata instead of part of the file's content in order to avoid preprocessing bugs with dictionary key access. 
 
+Here is a general overview of the model and its shape:
+
 ![example model](model.png)
 
 With 5,343,051 trainable parameters and running on 5 epochs, I trained a preliminary LSTM model based on don Quijote. The sparse categorical cross entropy less was reduced from 2.6026 in the first epoch to 1.4291 in the last epoch. 
