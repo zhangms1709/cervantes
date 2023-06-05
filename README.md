@@ -17,18 +17,18 @@ The first version of the RNN was designed to be a simple baseline model. It cons
 
 One of the main advantages of using a LSTM over a vanilla RNN include having memory of words which is not restricted to the short term. In addition to the hidden state, there is a cell state which preserves information longer through the forget and remember modules. Pointwise multiplication by a mask vector is used to forget information while remembering is done through tanh and gating memory to contain only what we want to preserve long-term:
 
-<img src="LSTM.png" width="350px" height="150px">
+<img src="LSTM.png" width="370px" height="150px">
 
 Given the huge size of the don Quijote corpus, there were two primary NLP challenges in creating an effective language model. Notably, Cervantes' masterpiece *El ingenioso hidalgo don quijote de la mancha* is in an antiquated form of Spanish (Lathrop 2019). The language has several phonological and grammatical peculiarities:
 - Using past subjunctive where one would expect the conditional
-- Using future subjunctive which had its function replaced by present indicative 
-- Passive voice is much more prevalent in passages of dialogue
+- Using future subjunctive which is now replaced by present indicative
+- Writing with passive voice is much more prevalent in dialogue
 
 Spanish has stricter and more nuanced grammatical rules compared to English, and thus, the training process to reach high accuracy may be longer.
 
 Following spanish literary corpi such as MegaLite, a UTF-8 encoding was used to represent the original spanish. This setting ensures that accents and punctuation unique to Spanish are preserved in text generation. The text file was also read using UTF-8 signature, which treats the byte order marks as metadata instead of part of the file's content in order to avoid preprocessing bugs with dictionary key access. 
 
-Here is a general overview of the model and its shape:
+Here is a **general overview** of the model and its shape:
 
 ![example model](model.png)
 
