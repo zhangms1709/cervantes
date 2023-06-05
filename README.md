@@ -22,7 +22,7 @@ One of the main advantages of using a LSTM over a vanilla RNN include having mem
 Given the huge size of the don Quijote corpus, there were two primary NLP challenges in creating an effective language model. Notably, Cervantes' masterpiece *El ingenioso hidalgo don quijote de la mancha* is in an antiquated form of Spanish (Lathrop 2019). The language has several phonological and grammatical peculiarities:
 - Using past subjunctive where one would expect the conditional
 - Using future subjunctive which is now replaced by present indicative
-- Writing with passive voice is much more prevalent in dialogue
+- Writing with passive voice which is avoided in English
 
 Spanish has stricter and more nuanced grammatical rules compared to English, and thus, the training process to reach high accuracy may be longer.
 
@@ -32,7 +32,7 @@ Here is a **general overview** of the model and its shape:
 
 ![example model](model.png)
 
-With 5,343,051 trainable parameters and running on 5 epochs, I trained a preliminary LSTM model based on don Quijote. The sparse categorical cross entropy less was reduced from 2.6026 in the first epoch to 1.4291 in the last epoch. 
+With 5,343,051 trainable parameters and running on 5 epochs, I trained a preliminary LSTM model based on *don Quijote*. The sparse categorical cross entropy less was reduced from 2.6026 in the first epoch to 1.4291 in the last epoch. 
 
 The first attempt of implementing a LSTM had a fatal flaw in the preprocessing step. Regexes were used to strip punctuation and white space, however that removes grammatical structure from the sentences entirly. A sample sentence from this first model is riddled with words that do not exist and grammatical errors:
 
@@ -43,7 +43,7 @@ The first attempt of implementing a LSTM had a fatal flaw in the preprocessing s
 
 </details>
 
-Thus, regexes were removed and puncutation was preserved. Instant improvement was observed. The model was capable of citing numerous characters and producing different literary forms such as sonnets. However, there was still significant ambiguity in the sentences and meaning was often obfuscated. Here is are two sample sentences generated from the input "Dulcinea":
+Thus, regexes were removed and puncutation was preserved. Drastic improvement was observed. The model was capable of citing numerous characters (i.e. Camilla and don Fernando) and using different literary styles such as sonnets. However, there was still significant ambiguity in the sentences and meaning was often obfuscated. For example, here are two sample sentences generated from the input "Dulcinea":
 
 <details>
   <summary>Example output:</summary>
@@ -54,9 +54,9 @@ Thus, regexes were removed and puncutation was preserved. Instant improvement wa
 
 </details>
 
-These sentences are a significant improvement in several respects. The model is able to employ transition words with correct punctuation such as porque (because) and aunque (although). Also, the second sentence seems to be on the verge of meaning, as it is a prayer to God (Dios) which is common in the novel.
+These sentences are a significant improvement in several respects. The model is able to employ conjuctions and transition words with correct punctuation such as porque (because) and aunque (although). Moreover, the second sentence seems to be on the verge of meaning (although it is still gibberish), as it starts with a prayer to God (Dios).
 
-This model could have benefitted from significantly more training epochs, however that would be much more computationally taxing in both the lens of time and cost. The question is if there is a more efficient way to increase accuracy in a shorter time frame.
+This model could have benefitted from significantly more training epochs, however that would be much more computationally taxing in both the context of time and cost. The question thus is if there is a **more efficient way** to increase accuracy in a shorter time frame.
 
 ## SeqGAN
 
