@@ -35,8 +35,7 @@ Thus, regexes were removed and puncutation was preserved. Instant improvement wa
 
 "Dulcinea que de su risponde, porque el camino como un canse nibes del triendo en cielto, simprino moy de las humándoles, verían y heráspanto."
 
-"Dulcinea dice:
-  - Dios hecha hejor donde galer la emparte y mifar se decernas, aunque natura de otras nicús mantas destas de aligaron a,idon que atrababrás, cómo"
+"Dulcinea dice: Dios hecha hejor donde galer la emparte y mifar se decernas, aunque natura de otras nicús mantas destas de aligaron."
 
 These sentences are a significant improvement in several respects. The model is able to employ transition words with correct punctuation such as porque (because) and aunque (although). Also, the second sentence seems to be on the verge of meaning, as it is a prayer to God (Dios) which is common in the novel.
 
