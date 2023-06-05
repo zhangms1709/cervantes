@@ -8,7 +8,7 @@ index2char = np.array(vocab)
 
 model = tf.keras.models.load_model('quijote_rnn2.h5')
 
-def generate_text(model, start_string, num_generate = 1000, temperature=1.0):
+def generate_text(model, start_string, num_generate = 150, temperature=1.0):
     input_indices = [char2index[s] for s in start_string]
     input_indices = tf.expand_dims(input_indices, 0)
 
@@ -31,4 +31,4 @@ def generate_text(model, start_string, num_generate = 1000, temperature=1.0):
 
     return (start_string + ''.join(text_generated))
 
-print(generate_text(model, start_string=u"Dulcinea "))
+print(generate_text(model, start_string=u"Dulcinea dice"))
