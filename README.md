@@ -9,7 +9,7 @@
 
 ## Introduction
 
-Text generation in Spanish based on Don Quijote presents several unique and interesting challenges. This project experiments with a wide variety of neural text generation (NTG) techniques such as supervised learning through character-based RNNs (Recurrent Neural Network) and reinforcement learning via unsupervised Generative Adversarial Networks or GANs for short (Goodfellow et al., 2014).
+Text generation in Spanish based on Don Quijote presents several unique and interesting challenges. This project experiments with a wide variety of neural text generation (NTG) techniques such as supervised learning through character-based RNNs (Recurrent Neural Networks) and reinforcement learning via unsupervised Generative Adversarial Networks or GANs for short (Goodfellow et al., 2014). To what extent of success can the literary style of Cervantes, the most widely read Spanish author in the world, be imitated and learned?
 
 ## LSTM
 
