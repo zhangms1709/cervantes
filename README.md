@@ -23,6 +23,7 @@ Given the huge size of the don Quijote corpus, there were two primary NLP challe
 - Using past subjunctive where one would expect the conditional
 - Using future subjunctive which had its function replaced by present indicative 
 - Passive voice is much more prevalent in passages of dialogue
+
 Spanish has stricter and more nuanced grammatical rules compared to English, and thus, the training process to reach high accuracy may be longer.
 
 Following spanish literary corpi such as MegaLite, a UTF-8 encoding was used to represent the original spanish. This setting ensures that accents and punctuation unique to Spanish are preserved in text generation. The text file was also read using UTF-8 signature, which treats the byte order marks as metadata instead of part of the file's content in order to avoid preprocessing bugs with dictionary key access. 
