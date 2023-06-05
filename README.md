@@ -2,7 +2,7 @@
 
 ## Contents
 - [Introduction](#introduction)
-- [LSTM](#lstm)
+- [Long short-term memory](#lstm)
 - [SeqGAN](#seqGAN)
 - [Comparison](#comparison)
 - [Literary musings](#literary-musings)
@@ -11,7 +11,7 @@
 
 Text generation in Spanish based on Don Quijote presents several unique and interesting challenges. This project experiments with a wide variety of neural text generation (NTG) techniques such as supervised learning through character-based RNNs (Recurrent Neural Networks) and reinforcement learning via unsupervised Generative Adversarial Networks or GANs for short (Goodfellow et al., 2014). To what extent of success can the literary style of Cervantes, the most widely read Spanish author in the world, be imitated and learned?
 
-## LSTM
+## Long short-term memory
 
 The first version of the RNN was designed to be a simple baseline model. It consists of one embedding layer, a long short-term memory (LSTM) layer, and a dense layer. RNNs are very strong at modelling sequential data, and thus has been frequently used to generate text imitating authors such as Shakespeare. However, very few RNN models have been tested on other languages with more complicated grammatical rules such as Spanish.
 
