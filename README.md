@@ -13,7 +13,9 @@ Text generation in Spanish based on Don Quijote presents several unique and inte
 
 ## VanillaLSTM
 
-The first version of the RNN was designed to be a simple baseline model. It consists of one embedding layer, a long short-term memory (LSTM) layer, and a dense layer. RNNs are very strong at modelling sequential data, and thus has been frequently used to generate text imitating authors such as Shakespeare. However, very few RNN models have been tested on other languages with more complicated grammatical rules such as Spanish.
+The first version of the model was designed to be a simple baseline. It consists of one embedding layer, a long short-term memory (LSTM) layer, and a dense layer. The RNN is character-based precisely because it is generating a probability distribution for the next character in a sequence given the sequence of previous characters. The model thus generates novel sentences one character at a time.
+
+RNNs are very strong at modelling sequential data, and thus has been frequently used to generate text imitating authors such as Shakespeare. However, very few RNN models have been tested on other languages with more complicated grammatical rules such as Spanish.
 
 One of the main advantages of using a LSTM over a vanilla RNN include having memory of words which is not restricted to the short term. In addition to the hidden state, there is a cell state which preserves information longer through the forget and remember modules. Pointwise multiplication by a mask vector is used to forget information while remembering is done through tanh and gating memory to contain only what we want to preserve long-term:
 
