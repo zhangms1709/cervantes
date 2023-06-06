@@ -13,7 +13,7 @@ Text generation in Spanish based on Don Quijote presents several unique and inte
 
 ## VanillaLSTM
 
-The first version of the model was designed to be a simple baseline. It consists of one embedding layer, a long short-term memory (LSTM) layer, and a dense layer. The RNN is called character-based precisely because sentences are generated one character at a time based on probability distributions of input text.
+The first version of the model was designed to be a simple baseline. It consists of one embedding layer, a long short-term memory (LSTM) layer, and a dense layer. The RNN is called character-based precisely because sentences are generated one character at a time based on probability distributions predicting the next character.
 
 RNNs are very strong at modelling sequential data, and thus has been frequently used to generate text imitating authors such as Shakespeare. However, very few RNN models have been tested on other languages with more complicated grammatical rules such as Spanish.
 
