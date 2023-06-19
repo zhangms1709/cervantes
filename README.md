@@ -62,6 +62,8 @@ This model could have benefitted from significantly more training epochs, howeve
 
 ## SeqGAN
 
+The Sequence Generative Adversarial Network consists of a generator and a discriminator which consists of one dense layer with sigmoid activation. After running 1000 batches, there was a memory allocation error, and thus, to remedy this, I used OSCAR, Brown's high performance computing clusters.
+
 ## Comparison
 
 ## Literary musings
