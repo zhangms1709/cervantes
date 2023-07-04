@@ -64,7 +64,9 @@ This model could have benefitted from significantly more training epochs, howeve
 
 The Sequence Generative Adversarial Network consists of a generator and a discriminator which consists of one dense layer with sigmoid activation. After running 1000 batches, there was a memory allocation error due to the size of the dataset. In order to resolve this issue, the model's training ran on Brown's High Performance Computing Clusters, known as [OSCAR](https://docs.ccv.brown.edu/oscar/).
 
-With 120 pre-train epochs, the model pre-trained both the generator and discriminator, with test mean cross-entropy loss being reduced from 10.216 to 8.267.
+The Discriminator in the SeqGAN utilizes pooling and applies dropout regularization for better generalization. Its metric is softmax cross-entropy loss with L2 regularization and is optimized with the Adams optimizer. The Generator class creates sequences of tokens through a combination of an embedding layer, recurrent unit, and output unit. It then uses the Adam optimizer for training and applies gradient clipping.
+
+With 120 pre-train epochs, the model pre-trained both the generator and discriminator, with test cross-entropy loss being reduced from 10.216 to 8.267.
 
 ## Comparison
 

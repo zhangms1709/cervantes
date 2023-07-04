@@ -1,5 +1,5 @@
-from model import SeqGAN
-from datap import DataGenerator
+from old_seqGAN.model import SeqGAN
+from old_seqGAN.datap import DataGenerator
 import numpy as np
 import tensorflow as tf
 
