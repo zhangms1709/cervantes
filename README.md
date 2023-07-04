@@ -4,7 +4,6 @@
 - [Introduction](#introduction)
 - [Long short-term memory](#vanillalstm)
 - [SeqGAN](#seqGAN)
-- [Comparison](#comparison)
 - [Literary musings](#literary-musings)
 
 ## Introduction
@@ -70,9 +69,9 @@ Here is a general diagram of how SeqGAN operates:
 
 The Discriminator in the SeqGAN model uses pooling and applies dropout regularization for better generalization. Its metric is softmax cross-entropy loss with L2 regularization and is optimized with the Adams optimizer. The Generator creates sequences of tokens through a combination of an embedding layer, recurrent unit, and output unit. It then uses the Adam optimizer for training and applies gradient clipping. The Rollout class implements a rollout policy, a technique used in reinforcement learning to improve the performance of the Generator model by fine-tuning its output based on the feedback received from the Discriminator. With this policy, rewards are calculated to update the Generator's parameters.
 
-With 120 pre-train epochs, the model pre-trained both the generator and discriminator, with test cross-entropy loss being reduced from 10.216 to 8.267.
+With 120 pre-train epochs, the model pre-trained both the generator and discriminator, with cross-entropy loss being reduced from 10.216 to 8.267. SeqGAN was significantly faster in running more epochs efficiently, however training also took longer because multiple models had to be trained as opposed to one.
 
-## Comparison
+But, in the context of the Spanish language, SeqGAN proved to be superior since the discriminator was able to root out and correct the grammatical errors of the generator. The generator, through reinforcement learning rewards, was even able to learn the antiquated grammar of Cervantes' time. Given that LSTMs were developed with an anglocentric focus in mind, that is tackling natural language problems in English, Spanish provided a harder challenge which 1. the LSTM struggled with and 2. SeqGAN exceled with. Reinforcement Learning thus provides a promising paradigm which offers huge versatility and adaptability, but requires more optimization in terms of resource costs.
 
 ## Literary musings
 Cervantes famously writes in the first part of *Quijote* that the author of the novel is a *morisco* historian by the name of Cide Hamete Benengeli. However, we must be cautious in using the word 'novel'. The term and its connotation today had yet to be invented back then. 
