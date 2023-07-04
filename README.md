@@ -88,6 +88,6 @@ But, Cervantes does give us a challenge. He ends the first part of *el Quijote* 
 
 *Forsi altro canterà con miglior plectio.* 
 
-In English, this means "perhaps another will sing with a better pluck". Akin to a musician, the author so too is singing a unique ode. Cervantes may have finished writing the story of don Quijote, but his tale has been told countless times in other shapes and forms (see *Madame Bovary* and *The Idiot*). 
+In English, this translates to "perhaps another will sing with a better pluck". Akin to a musician, the author so too is singing a unique ode. Cervantes may have finished writing the story of don Quijote, but he challenges posterity to do better. Indeed, his tale has been told countless times in other shapes and forms, directly inspiring *Madame Bovary* and *The Idiot*. 
 
 Human creativity is irreplacable, and is tied to a type of poetic madness. Madness drives don Quijote on his famous adventures and literature to greater heights. Don Quijote overflows his own humanity, his own capacities, exceeding the bounds of human behavior. Cervantes too lives on through this history, and challenges us to do the same.
