@@ -64,6 +64,8 @@ This model could have benefitted from significantly more training epochs, howeve
 
 The Sequence Generative Adversarial Network consists of a generator and a discriminator which consists of one dense layer with sigmoid activation. After running 1000 batches, there was a memory allocation error due to the size of the dataset. In order to resolve this issue, the model's training ran on Brown's High Performance Computing Clusters, known as [OSCAR](https://docs.ccv.brown.edu/oscar/).
 
+With 120 pre-train epochs, the model pre-trained both the generator and discriminator, with test mean cross-entropy loss being reduced from 10.216 to 8.267.
+
 ## Comparison
 
 ## Literary musings
