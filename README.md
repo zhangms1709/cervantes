@@ -66,7 +66,7 @@ The Sequence Generative Adversarial Network consists of a generator and a discri
 
 The Discriminator in the SeqGAN model uses pooling and applies dropout regularization for better generalization. Its metric is softmax cross-entropy loss with L2 regularization and is optimized with the Adams optimizer. The Generator creates sequences of tokens through a combination of an embedding layer, recurrent unit, and output unit. It then uses the Adam optimizer for training and applies gradient clipping. The Rollout class implements a rollout policy, a technique used in reinforcement learning to improve the performance of the Generator model by fine-tuning its output based on the feedback received from the Discriminator. With this policy, rewards are calculated to update the Generator's parameters.
 
-![SeqGAN model](images/seqgan_architecture.png)
+![SeqGAN model](images/seqgan.png)
 
 With 120 pre-train epochs, the model pre-trained both the generator and discriminator, with test cross-entropy loss being reduced from 10.216 to 8.267.
 
