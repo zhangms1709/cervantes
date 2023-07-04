@@ -75,5 +75,20 @@ With 120 pre-train epochs, the model pre-trained both the generator and discrimi
 ## Comparison
 
 ## Literary musings
+Cervantes famously writes in the first part of *Quijote* that the author of the novel is a *morisco* historian by the name of Cide Hamete Benengeli. However, we must be cautious in using the word 'novel'. The term and its connotation today had yet to be invented back then. 
 
+The contemporaries of Cervantes would instead refer to this adventure as a *historia*, a history. The narrator goes to great lengths to assert the most truthful nature of the story, and curiously, there are even chapters which Cide Hamete identifies as apocryphal, that is being fake (i.e. the Cave of Montesinos and the conversation between Sancho and his wife Teresa). But, all history pretends to be history (see Wardropper). 
 
+One of the greatest characteristics of *el Quijote* is its inability to be defined. It escapes the realm of facts. Is the real name of don Quijote Alonso Quijano? We will never know. Great linguistic uncertainty pervades *el Quijote*. Sancho's wife is referred to as Teresa, Juana, Maria and even the surname of the titular character don Quijote is uncertain, sometimes being Quijada, Quesada, or Quijana. In criticizing the shortcomings of writing, as being incapable of encapsulating truth, Cervantes weaves a great tapestry of human expression and subjectivity. 
+
+Writing is rigid. Once text is put on a page, it dies and is unable to defend itself (see Plato' attack of writing in the *Phaedrus* and his *Seventh Letter*). With the advent of large language models (LLMs) and transformers (see the paper "Attention Is All You Need"), we are once again forced to reevaluate writing in its essence. 
+
+Certainly from the perspective of Cervantes, authenticity in writing is overrated. Most writing functionally is a means, a medium to convey information. The best type of writing, however, is one that forces the reader to think for themselves, to learn from what is not written down plainly. LLMs are not yet at the level of Cervantes from almost half a millenia ago. His innovation, the first modern novel, remains as a towering literary achievement. 
+
+But, Cervantes does give us a challenge. He ends the first part of *el Quijote* with a line from Ariosto, a famous Italian poet:
+
+*Forsi altro canterà con miglior plectio.* 
+
+In English, this means "perhaps another will sing with a better pluck". Akin to a musician, the author so too is singing a unique ode. Cervantes may have finished writing the story of don Quijote, but his tale has been told countless times in other shapes and forms (see *Madame Bovary* and *The Idiot*). 
+
+Human creativity is irreplacable, and is tied to a type of poetic madness. Madness drives don Quijote on his famous adventures and literature to greater heights. Don Quijote overflows his own humanity, his own capacities, exceeding the bounds of human behavior. Cervantes too lives on through this history, and challenges us to do the same.
