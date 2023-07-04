@@ -58,13 +58,15 @@ Therefore, regexes were removed and puncutation was preserved. Drastic improveme
 
 These sentences are a significant improvement in several respects. The model is able to employ conjuctions and transition words with correct punctuation such as porque (because) and aunque (although). Moreover, the second sentence seems to be on the verge of meaning (although it is still gibberish), as it starts with a prayer to God (Dios).
 
-This model could have benefitted from significantly more training epochs, however that would be much more computationally taxing in both the context of time and cost. The question thus is if there is a **more efficient way** to increase accuracy in a shorter time frame.
+This model could have benefitted from significantly more training epochs, however that would be much more computationally taxing in both the framework of time and cost. The question thus is if there is a **more efficient way** to increase accuracy in a shorter time frame.
 
 ## SeqGAN
 
 The Sequence Generative Adversarial Network consists of a generator and a discriminator which consists of one dense layer with sigmoid activation. After running 1000 batches, there was a memory allocation error due to the size of the dataset. In order to resolve this issue, the model's training ran on Brown's High Performance Computing Clusters, known as [OSCAR](https://docs.ccv.brown.edu/oscar/).
 
-The Discriminator in the SeqGAN utilizes pooling and applies dropout regularization for better generalization. Its metric is softmax cross-entropy loss with L2 regularization and is optimized with the Adams optimizer. The Generator class creates sequences of tokens through a combination of an embedding layer, recurrent unit, and output unit. It then uses the Adam optimizer for training and applies gradient clipping.
+The Discriminator in the SeqGAN model uses pooling and applies dropout regularization for better generalization. Its metric is softmax cross-entropy loss with L2 regularization and is optimized with the Adams optimizer. The Generator creates sequences of tokens through a combination of an embedding layer, recurrent unit, and output unit. It then uses the Adam optimizer for training and applies gradient clipping. The Rollout class implements a rollout policy, a technique used in reinforcement learning to improve the performance of the Generator model by fine-tuning its output based on the feedback received from the Discriminator. With this policy, rewards are calculated to update the Generator's parameters.
+
+![SeqGAN model](images/seqgan_architecture.png)
 
 With 120 pre-train epochs, the model pre-trained both the generator and discriminator, with test cross-entropy loss being reduced from 10.216 to 8.267.
 
