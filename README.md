@@ -83,7 +83,7 @@ One of the greatest characteristics of *el Quijote* is its inability to be defin
 
 Writing is rigid. Once text is put on a page, it dies and is unable to defend itself (see Plato' attack of writing in the *Phaedrus* and his *Seventh Letter*). With the advent of large language models (LLMs) and transformers (see the paper "Attention Is All You Need"), we are once again forced to reevaluate writing in its essence. 
 
-Certainly from the perspective of Cervantes, authenticity in writing is overrated. Most writing functionally is a means, a medium to convey information. The best type of writing, however, is one that forces the reader to think for themselves, to learn from what is not written down plainly. LLMs are not yet at the level of Cervantes from almost half a millenia ago. His innovation, the first modern novel, remains as a towering literary achievement. 
+Certainly from the perspective of Cervantes, authenticity in writing is overrated. Most writing functionally is a means, a medium to convey information. The best type of writing, however, is one that forces the reader to think for themselves, to learn from what is left unsaid. LLMs are not yet at the level of Cervantes, who lived almost half a millenia ago. His innovation, the first modern novel, remains a towering literary achievement. 
 
 But, Cervantes does give us a challenge. He ends the first part of *el Quijote* with a line from Ariosto, a famous Italian poet:
 
